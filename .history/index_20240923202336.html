@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .arc{
+        --b:30px;
+        --a:220deg;
+        width: 200px;
+        aspect-ratio: 1;
+        padding: var(--b);
+        box-sizing: border-box;
+        border-radius: 50%;
+        background: linear-gradient(#CC333F, #8A9B0F);
+        --_g:var(--b) var(--b) no-repeat radial-gradient(50% 50%,#000 calc)
+    }
+</style>
+</head>
+<body>
+    <div class="arc"></div>
+    <div class="arc" style="--a:140deg"></div>
+    <div class="arc" style="--a:320deg ; --b:20px"></div>
+</body>
+</html>
